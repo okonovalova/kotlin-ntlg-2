@@ -12,11 +12,11 @@ enum class CardType {
 
 fun main() {
     //сумма переводов за текущий месяц
-    val sumTransferCurrentMonth = 76_000.00 * countOfKopecksInRuble
+    val sumTransferCurrentMonth = 60_000.00 * countOfKopecksInRuble
     //сумма перевода
-    val amountTransfer = 60_000.00 * countOfKopecksInRuble
+    val amountTransfer = 1_000.00 * countOfKopecksInRuble
     //тип карты. Возможные значения: Mastercard, Maestro, Visa, Мир, VK Pay
-    val cardType = CardType.MIR
+    val cardType = CardType.VISA
 
     val result = calculateCommission(cardType, sumTransferCurrentMonth, amountTransfer)
     println("Комиссия за перевод составит $result копеек")
